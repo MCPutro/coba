@@ -16,8 +16,24 @@ public class JavaApplication7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("hahaha");
+        int[] a = {1,2,3,4,5,6,7,8,9,0};
+        
+        int getIndex = -1;
+        int c = 2;
+        for (int i = 0; i < a.length; i++) {
+            if(c == a[i]){
+                getIndex = i;
+            }
+        }
+        for (int i = getIndex+1; i < a.length; i++) {
+            a[i-1] = a[i];
+        }
+        
+        
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+            
+        }
     }
     
 }
