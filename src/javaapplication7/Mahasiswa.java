@@ -11,5 +11,6 @@ package javaapplication7;
  * @author Mu'ti C Putro
  */
 public class Mahasiswa {
+    private String nama;
     
 }
